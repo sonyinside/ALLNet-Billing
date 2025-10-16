@@ -1,15 +1,15 @@
 {
-    "name": "hotspotbilling/phpnuxbill",
+    "name": "allnetbilling/allnet-billing",
     "type": "template",
-    "description": "PHPNuxBill a Hotspot Billing Software.",
-    "keywords": ["template","PHPMixBill","PHPnuxBill","Mikrotik","Hotspot","Billing"],
-    "homepage": "https://github.com/hotspotbilling/phpnuxbill",
+    "description": "ALLNet Billing - Hotspot Billing Software.",
+    "keywords": ["template", "Mikrotik", "Hotspot", "Billing", "ALLNet"],
+    "homepage": "https://github.com/allnetbilling/allnet-billing",
     "license": "MIT",
     "authors": [
         {
-            "name": "ibnux",
-            "email": "me@ibnux.net",
-            "homepage": "https://ibnux.net",
+            "name": "allnetteam",
+            "email": "me@allnetteam.net",
+            "homepage": "https://allnetteam.net",
             "role": "Developer"
         }
     ]

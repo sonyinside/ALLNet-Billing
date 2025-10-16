@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  **/
 
 _auth();
@@ -233,9 +233,9 @@ if (isset($_GET['recharge']) && !empty($_GET['recharge'])) {
     }
 }
 
-if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'] && $_c['hs_auth_method'] != 'hchap')) {
-    $ui->assign('nux_mac', $_SESSION['nux-mac']);
-    $ui->assign('nux_ip', $_SESSION['nux-ip']);
+if (!empty($_SESSION['allnet-mac']) && !empty($_SESSION['allnet-ip'] && $_c['hs_auth_method'] != 'hchap')) {
+    $ui->assign('allnet_mac', $_SESSION['allnet-mac']);
+    $ui->assign('allnet_ip', $_SESSION['allnet-ip']);
     $bill = ORM::for_table('tbl_user_recharges')->where('id', $_GET['id'])->where('username', $user['username'])->findOne();
     $p = ORM::for_table('tbl_plans')->where('id', $bill['plan_id'])->find_one();
     $dvc = Package::getDevice($p);
@@ -243,7 +243,7 @@ if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'] && $_c['hs_auth_m
         if (file_exists($dvc)) {
             require_once $dvc;
             if ($_GET['mikrotik'] == 'login') {
-                (new $p['device'])->connect_customer($user, $_SESSION['nux-ip'], $_SESSION['nux-mac'], $bill['routers']);
+                (new $p['device'])->connect_customer($user, $_SESSION['allnet-ip'], $_SESSION['allnet-mac'], $bill['routers']);
                 r2(getUrl('home'), 's', Lang::T('Login Request successfully'));
             } else if ($_GET['mikrotik'] == 'logout') {
                 (new $p['device'])->disconnect_customer($user, $bill['routers']);
@@ -255,12 +255,12 @@ if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'] && $_c['hs_auth_m
     }
 }
 
-if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'] && !empty($_SESSION['nux-hostname']) && $_c['hs_auth_method'] == 'hchap')) {
+if (!empty($_SESSION['allnet-mac']) && !empty($_SESSION['allnet-ip'] && !empty($_SESSION['allnet-hostname']) && $_c['hs_auth_method'] == 'hchap')) {
     $apkurl = (((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'onoff') || $_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    $ui->assign('nux_mac', $_SESSION['nux-mac']);
-    $ui->assign('nux_ip', $_SESSION['nux-ip']);
-    $keys = explode('-', $_SESSION['nux-key']);
-    $ui->assign('hostname', $_SESSION['nux-hostname']);
+    $ui->assign('allnet_mac', $_SESSION['allnet-mac']);
+    $ui->assign('allnet_ip', $_SESSION['allnet-ip']);
+    $keys = explode('-', $_SESSION['allnet-key']);
+    $ui->assign('hostname', $_SESSION['allnet-hostname']);
     $ui->assign('apkurl', $apkurl);
     $ui->assign('key1', $keys[0]);
     $ui->assign('key2', $keys[1]);
@@ -282,12 +282,12 @@ if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'] && !empty($_SESSI
     }
 }
 
-if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'] && !empty($_SESSION['nux-hostname']) && $_c['hs_auth_method'] == 'hchap')) {
+if (!empty($_SESSION['allnet-mac']) && !empty($_SESSION['allnet-ip'] && !empty($_SESSION['allnet-hostname']) && $_c['hs_auth_method'] == 'hchap')) {
     $apkurl = (((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'onoff') || $_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    $ui->assign('nux_mac', $_SESSION['nux-mac']);
-    $ui->assign('nux_ip', $_SESSION['nux-ip']);
-    $keys = explode('-', $_SESSION['nux-key']);
-    $ui->assign('hostname', $_SESSION['nux-hostname']);
+    $ui->assign('allnet_mac', $_SESSION['allnet-mac']);
+    $ui->assign('allnet_ip', $_SESSION['allnet-ip']);
+    $keys = explode('-', $_SESSION['allnet-key']);
+    $ui->assign('hostname', $_SESSION['allnet-hostname']);
     $ui->assign('apkurl', $apkurl);
     $ui->assign('key1', $keys[0]);
     $ui->assign('key2', $keys[1]);

@@ -1,15 +1,15 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  **/
 
 _admin();
 $ui->assign('_title', 'Plugin Manager');
 $ui->assign('_system_menu', 'settings');
 
-$plugin_repository = 'https://hotspotbilling.github.io/Plugin-Repository/repository.json';
+$plugin_repository = 'https://allnetbilling.github.io/plugin-repository/repository.json';
 
 $action = $routes['1'];
 $ui->assign('_admin', $admin);

@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  **/
 
 $maintenance_mode = $config['maintenance_mode'];
@@ -211,14 +211,14 @@ switch ($do) {
                         $user->last_login = date('Y-m-d H:i:s');
                         $user->save();
                         // add customer to mikrotik
-                        if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'])) {
+                        if (!empty($_SESSION['allnet-mac']) && !empty($_SESSION['allnet-ip'])) {
                             try {
                                 $p = ORM::for_table('tbl_plans')->where('id', $v1['id_plan'])->find_one();
                                 $dvc = Package::getDevice($p);
                                 if ($_app_stage != 'demo') {
                                     if (file_exists($dvc)) {
                                         require_once $dvc;
-                                        (new $p['device'])->connect_customer($user, $_SESSION['nux-ip'], $_SESSION['nux-mac'], $v1['routers']);
+                                        (new $p['device'])->connect_customer($user, $_SESSION['allnet-ip'], $_SESSION['allnet-mac'], $v1['routers']);
                                         if (!empty($config['voucher_redirect'])) {
                                             r2($config['voucher_redirect'], 's', Lang::T("Voucher activation success, now you can login"));
                                         } else {
@@ -258,14 +258,14 @@ switch ($do) {
                     if ($v1['user'] == $user['username']) {
                         $user->last_login = date('Y-m-d H:i:s');
                         $user->save();
-                        if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'])) {
+                        if (!empty($_SESSION['allnet-mac']) && !empty($_SESSION['allnet-ip'])) {
                             try {
                                 $p = ORM::for_table('tbl_plans')->where('id', $v1['id_plan'])->find_one();
                                 $dvc = Package::getDevice($p);
                                 if ($_app_stage != 'demo') {
                                     if (file_exists($dvc)) {
                                         require_once $dvc;
-                                        (new $p['device'])->connect_customer($user, $_SESSION['nux-ip'], $_SESSION['nux-mac'], $v1['routers']);
+                                        (new $p['device'])->connect_customer($user, $_SESSION['allnet-ip'], $_SESSION['allnet-mac'], $v1['routers']);
                                         if (!empty($config['voucher_redirect'])) {
                                             r2($config['voucher_redirect'], 's', Lang::T("Voucher activation success, now you can login"));
                                         } else {

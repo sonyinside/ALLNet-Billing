@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  **/
 
 /**
@@ -27,7 +27,7 @@ switch ($action) {
                         if ((new $p['device'])->online_customer($user, $bill['routers'])) {
                             die('<a href="' . getUrl('home&mikrotik=logout&id=' . $bill['id']) . '" onclick="return confirm(\'' . Lang::T('Disconnect Internet?') . '\')" class="btn btn-success btn-xs btn-block">' . Lang::T('You are Online, Logout?') . '</a>');
                         } else {
-                            if (!empty($_SESSION['nux-mac']) && !empty($_SESSION['nux-ip'])) {
+                            if (!empty($_SESSION['allnet-mac']) && !empty($_SESSION['allnet-ip'])) {
                                 die('<a href="' . getUrl('home&mikrotik=login&id=' . $bill['id']) . '" onclick="return confirm(\'' . Lang::T('Connect to Internet?') . '\')" class="btn btn-danger btn-xs btn-block">' . Lang::T('Not Online, Login now?') . '</a>');
                             } else {
                                 die(Lang::T('-'));

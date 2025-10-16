@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  **/
 
 _admin();
@@ -48,7 +48,7 @@ switch ($action) {
         header('Expires: 0');
         header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
         header("Content-type: text/csv");
-        header('Content-Disposition: attachment;filename="phpnuxbill_customers_' . date('Y-m-d_H_i') . '.csv"');
+        header('Content-Disposition: attachment;filename="allnetbilling_customers_' . date('Y-m-d_H_i') . '.csv"');
         header('Content-Transfer-Encoding: binary');
 
         $headers = [
@@ -110,7 +110,7 @@ switch ($action) {
         header('Expires: 0');
         header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
         header("Content-type: text/csv");
-        header('Content-Disposition: attachment;filename="phpnuxbill_prepaid_users' . date('Y-m-d_H_i') . '.csv"');
+        header('Content-Disposition: attachment;filename="allnetbilling_prepaid_users' . date('Y-m-d_H_i') . '.csv"');
         header('Content-Transfer-Encoding: binary');
 
         $headers = [
@@ -870,7 +870,7 @@ switch ($action) {
             header('Expires: 0');
             header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
             header("Content-type: text/csv");
-            header('Content-Disposition: attachment;filename="phpnuxbill_customers_' . $filter . '_' . date('Y-m-d_H_i') . '.csv"');
+            header('Content-Disposition: attachment;filename="allnetbilling_customers_' . $filter . '_' . date('Y-m-d_H_i') . '.csv"');
             header('Content-Transfer-Encoding: binary');
 
             $headers = [

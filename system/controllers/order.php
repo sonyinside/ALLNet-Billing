@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  **/
 
 _auth();
@@ -52,8 +52,8 @@ switch ($action) {
         if (empty($account_type)) {
             $account_type = 'Personal';
         }
-        if (!empty($_SESSION['nux-router'])) {
-            if ($_SESSION['nux-router'] == 'radius') {
+        if (!empty($_SESSION['allnet-router'])) {
+            if ($_SESSION['allnet-router'] == 'radius') {
                 $radius_pppoe = ORM::for_table('tbl_plans')
                     ->where('plan_type', $account_type)
                     ->where('enabled', '1')
@@ -67,7 +67,7 @@ switch ($action) {
                     ->where('type', 'Hotspot')
                     ->where('prepaid', 'yes')->find_many();
             } else {
-                $routers = ORM::for_table('tbl_routers')->where('id', $_SESSION['nux-router'])->find_many();
+                $routers = ORM::for_table('tbl_routers')->where('id', $_SESSION['allnet-router'])->find_many();
                 $rs = [];
                 foreach ($routers as $r) {
                     $rs[] = $r['name'];

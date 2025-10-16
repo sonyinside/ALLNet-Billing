@@ -1,39 +1,38 @@
 [![ReadMeSupportPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-project.svg)](https://s.id/standwithpalestine)
 
-# PHPNuxBill - PHP Mikrotik Billing
+# ALLNet Billing - MikroTik Billing
 
-![PHPNuxBill](install/img/logo.png)
+ALLNet Billing is a full-featured billing platform tailored for MikroTik hotspots and PPPOE networks. This fork removes upstream branding while keeping the flexible provisioning, automation, and notification features administrators rely on.
 
-## Feature
+![ALLNet Billing](install/img/logo.png)
+
+## Features
 
 - Voucher Generator and Print
-- [Freeradius](https://github.com/hotspotbilling/phpnuxbill/wiki/FreeRadius)
+- [Freeradius](https://github.com/allnetbilling/allnet-billing/wiki/FreeRadius)
 - Self registration
-- User Balance
-- Auto Renewal Package using Balance
-- Multi Router Mikrotik
-- Hotspot & PPPOE
+- User Balance and Auto Renewal
+- Multi Router MikroTik support
+- Hotspot & PPPOE management
 - Easy Installation
-- Multi Language
-- Payment Gateway
-- SMS validation for login
-- Whatsapp Notification to Consumer
-- Telegram Notification for Admin
+- Multi Language UI
+- Payment Gateway integrations
+- SMS/WhatsApp/Telegram notifications
 
-See [How it Works / Cara Kerja](https://github.com/hotspotbilling/phpnuxbill/wiki/How-It-Works---Cara-kerja)
+See [How it Works / Cara Kerja](https://github.com/allnetbilling/allnet-billing/wiki/How-It-Works---Cara-kerja).
 
-## Payment Gateway And Plugin
+## Payment Gateways and Plugins
 
-- [Payment Gateway List](https://github.com/orgs/hotspotbilling/repositories?q=payment+gateway)
-- [Plugin List](https://github.com/orgs/hotspotbilling/repositories?q=plugin)
+- [Payment Gateway List](https://github.com/orgs/allnetbilling/repositories?q=payment+gateway)
+- [Plugin List](https://github.com/orgs/allnetbilling/repositories?q=plugin)
 
-You can download payment gateway and Plugin from Plugin Manager
+Use the Plugin Manager inside the application to install integrations.
 
 ## System Requirements
 
-Most current web servers with PHP & MySQL installed will be capable of running PHPNuxBill
+Most current web servers with PHP & MySQL installed will be capable of running ALLNet Billing.
 
-Minimum Requirements
+Minimum Requirements:
 
 - Linux or Windows OS
 - Minimum PHP Version 8.2
@@ -44,9 +43,7 @@ Minimum Requirements
 - PHP-Mbstring
 - MySQL Version 4.1.x and above
 
-can be Installed in Raspberry Pi Device.
-
-The problem with windows is hard to set cronjob, better Linux
+The application can be installed on a Raspberry Pi device. Cron jobs are easier to configure on Linux than Windows.
 
 ## Changelog
 
@@ -54,57 +51,35 @@ The problem with windows is hard to set cronjob, better Linux
 
 ## Installation
 
-[Installation instructions](https://github.com/hotspotbilling/phpnuxbill/wiki)
+[Installation instructions](https://github.com/allnetbilling/allnet-billing/wiki)
 
 ## Freeradius
 
-Support [Freeradius with Database](https://github.com/hotspotbilling/phpnuxbill/wiki/FreeRadius)
+Support [Freeradius with Database](https://github.com/allnetbilling/allnet-billing/wiki/FreeRadius).
 
 ## Community Support
 
-- [Github Discussion](https://github.com/hotspotbilling/phpnuxbill/discussions)
-- [Telegram Group](https://t.me/phpmixbill)
+- [GitHub Discussion](https://github.com/allnetbilling/allnet-billing/discussions)
+- [Telegram Group](https://t.me/allnetbilling)
 
 ## Technical Support
 
-This Software is Free and Open Source, Without any Warranty.
-
-Even if the software is free, but Technical Support is not,
-Technical Support Start from Rp 500.000 or $50
-
-If you chat me for any technical support,
-you need to pay,
-
-ask anything for free in the [discussion](/hotspotbilling/phpnuxbill/discussions) page or [Telegram Group](https://t.me/phpnuxbill)
-
-Contact me at [Telegram](https://t.me/ibnux)
+This software is free and open source without any warranty. Paid technical assistance is available on request. For help, open a discussion or contact the ALLNet team on Telegram at [https://t.me/allnetteam](https://t.me/allnetteam).
 
 ## License
 
-GNU General Public License version 2 or later
+GNU General Public License version 2 or later. See [LICENSE](LICENSE) for details.
 
-see [LICENSE](LICENSE) file
+## Sponsors
 
-
-## Donate to ibnux
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/ibnux)
-
-BCA: 5410454825
-
-Mandiri: 163-000-1855-793
-
-a.n Ibnu Maksum
-
-## SPONSORS
-
-- [mixradius.com](https://mixradius.com/) Paid Services Billing Radius
+- [mixradius.com](https://mixradius.com/)
 - [mlink.id](https://mlink.id)
 - [https://github.com/sonyinside](https://github.com/sonyinside)
 
 ## Thanks
+
 We appreciate all people who are participating in this project.
 
-<a href="https://github.com/hotspotbilling/phpnuxbill/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=hotspotbilling/phpnuxbill" />
+<a href="https://github.com/allnetbilling/allnet-billing/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=allnetbilling/allnet-billing" />
 </a>
