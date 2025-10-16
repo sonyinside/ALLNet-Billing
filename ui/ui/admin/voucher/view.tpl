@@ -19,12 +19,12 @@
                     <a href="nux://print?text={urlencode($print)}"
                         class="btn btn-success text-black btn-sm hidden-md hidden-lg">
                         <i class="glyphicon glyphicon-phone"></i>
-                        NuxPrint
+                        ALLNetPrint
                     </a>
-                    <a href="https://github.com/hotspotbilling/android-printer"
+                    <a href="https://github.com/allnetbilling/android-printer"
                         class="btn btn-success text-black btn-sm hidden-xs hidden-sm" target="_blank">
                         <i class="glyphicon glyphicon-phone"></i>
-                        NuxPrint
+                        ALLNetPrint
                     </a>
                 </form>
                 <javascript type="text/javascript">

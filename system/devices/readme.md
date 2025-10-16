@@ -13,11 +13,11 @@ class FileName {
         return [
             'title' => 'Device',
             'description' => '',
-            'author' => 'ibnu maksum',
+            'author' => 'ALLNet Team',
             'url' => [
-                'Github' => 'https://github.com/hotspotbilling/phpnuxbill/',
-                'Telegram' => 'https://t.me/ibnux',
-                'Donate' => 'https://paypal.me/ibnux',
+                'Github' => 'https://github.com/allnetbilling/allnet-billing/',
+                'Telegram' => 'https://t.me/allnetteam',
+                'Donate' => 'https://paypal.me/allnetteam',
                 'any text' => 'Any Url'
             ]
         ];

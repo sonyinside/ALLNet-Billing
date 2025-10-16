@@ -32,12 +32,12 @@
                     <a href="nux://print?text={urlencode($invoice)}"
                         class="btn btn-success text-black btn-sm hidden-md hidden-lg">
                         <i class="glyphicon glyphicon-phone"></i>
-                        NuxPrint
+                        ALLNetPrint
                     </a>
-                    <a href="https://github.com/hotspotbilling/android-printer"
+                    <a href="https://github.com/allnetbilling/android-printer"
                         class="btn btn-success text-black btn-sm hidden-xs hidden-sm" target="_blank">
                         <i class="glyphicon glyphicon-phone"></i>
-                        NuxPrint
+                        ALLNetPrint
                     </a><br><br>
                     <input type="text" class="form-control form-sm" style="border: 0px; padding: 1px; background-color: white;" readonly onclick="this.select()" value="{$public_url}">
                 </form>

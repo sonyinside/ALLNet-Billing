@@ -10,11 +10,11 @@
 
         <div class="box box-hovered mb20 box-primary">
             <div class="box-header">
-                <h3 class="box-title">{Lang::T('Contribution')} PHPNuxBill</h3>
+                <h3 class="box-title">{Lang::T('Contribution')} ALLNet Billing</h3>
             </div>
             <div class="box-body">
-                <a href="https://github.com/hotspotbilling/phpnuxbill/graphs/contributors" target="_blank">
-                    <img src="https://contrib.rocks/image?repo=hotspotbilling/phpnuxbill&columns=10" width="100%" />
+                <a href="https://github.com/allnetbilling/allnet-billing/graphs/contributors" target="_blank">
+                    <img src="https://contrib.rocks/image?repo=allnetbilling/allnet-billing&columns=10" width="100%" />
                 </a>
             </div>
         </div>
@@ -27,10 +27,10 @@
             <div class="box-body">{Lang::T('Join the discussion to find solutions and support from a community ready to help.')}</div>
             <div class="box-footer">
                 <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                    <a href="https://github.com/hotspotbilling/phpnuxbill/discussions" target="_blank"
+                    <a href="https://github.com/allnetbilling/allnet-billing/discussions" target="_blank"
                         class="btn btn-primary btn-sm btn-block"><i class="ion ion-chatboxes"></i> {Lang::T('Github
                         Discussions')}</a>
-                    <a href="https://t.me/phpnuxbill" target="_blank" class="btn btn-primary btn-sm btn-block"><i
+                    <a href="https://t.me/allnetbilling" target="_blank" class="btn btn-primary btn-sm btn-block"><i
                             class="ion ion-chatboxes"></i> {Lang::T('Telegram Group')}</a>
                 </div>
             </div>
@@ -44,7 +44,7 @@
             <div class="box-header">
                 <h3 class="box-title">{Lang::T('Donations')} 🇮🇩</h3>
             </div>
-            <div class="box-body">{Lang::T('To support further development, please donate to iBNuX. Your donation will help ensure the continued development of this application.')}</div>
+            <div class="box-body">{Lang::T('To support further development, please donate to ALLNet Team. Your donation will help ensure the continued development of this application.')}</div>
             <div class="table-responsive">
                 <table class="table table-bordered table-striped">
                     <tbody>
@@ -58,16 +58,16 @@
                         </tr>
                         <tr>
                             <td>Atas nama</td>
-                            <td>Ibnu Maksum</td>
+                            <td>ALLNet Team</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="box-footer">
                 <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                    <a href="https://trakteer.id/ibnux" target="_blank"
+                    <a href="https://trakteer.id/allnetteam" target="_blank"
                         class="btn btn-success text-black btn-sm btn-block">Trakteer</a>
-                    <a href="https://karyakarsa.com/ibnux/support" target="_blank"
+                    <a href="https://karyakarsa.com/allnetteam/support" target="_blank"
                         class="btn btn-info text-black btn-sm btn-block">karyakarsa</a>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <h3 class="box-title">{Lang::T('Donations other than')} 🇮🇩</h3>
             </div>
             <div class="box-body">
-                {Lang::T('Your donation will help support and continue the development of PHPNuxBill.')}
+                {Lang::T('Your donation will help support and continue the development of ALLNet Billing.')}
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered table-striped">
@@ -98,14 +98,14 @@
                         </tr>
                         <tr>
                             <td>Account Name</td>
-                            <td>Ibnu Maksum</td>
+                            <td>ALLNet Team</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="box-footer">
                 <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                    <a href="https://paypal.me/ibnux" target="_blank"
+                    <a href="https://paypal.me/allnetteam" target="_blank"
                         class="btn btn-primary btn-sm btn-block">Paypal</a>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                 {Lang::T('Confirm your donation to continue this paid support. Or, ask about alternative donations available to suit your needs.')}
             </div>
             <div class="box-footer">
-                <a href="https://t.me/ibnux" target="_blank" class="btn btn-primary btn-sm btn-block">{Lang::T('Telegram')}</a>
+                <a href="https://t.me/allnetteam" target="_blank" class="btn btn-primary btn-sm btn-block">{Lang::T('Telegram')}</a>
             </div>
         </div>
         <div class="box box-primary box-hovered mb20 activities">
@@ -130,23 +130,23 @@
                 <h3 class="box-title">{Lang::T('WhatsApp Gateway and Free Telegram Bot')}</h3>
             </div>
             <div class="box-body">
-                {Lang::T('Connect your PHPNuxBill to WhatsApp efficiently using WhatsApp Gateway. Also, create Telegram bots easily and practically.')}
+                {Lang::T('Connect your ALLNet Billing to WhatsApp efficiently using WhatsApp Gateway. Also, create Telegram bots easily and practically.')}
             </div>
             <div class="box-footer">
-                <a href="https://wa.nux.my.id/login" target="_blank"
-                    class="btn btn-primary btn-sm btn-block">wa.nux.my.id</a>
+                <a href="https://wa.allnetbilling.com/login" target="_blank"
+                    class="btn btn-primary btn-sm btn-block">wa.allnetbilling.com</a>
             </div>
         </div>
     </div>
     <div class="col-sm-6" id="update">
         <div class="box box-primary box-hovered mb20 activities">
             <div class="box-header">
-                <h3 class="box-title">PHPNUXBILL</h3>
+                <h3 class="box-title">ALLNET BILLING</h3>
             </div>
             <div class="box-body">
-                <b>PHPNuxBill</b>
+                <b>ALLNet Billing</b>
                 {Lang::T('is a Hotspot and PPPoE billing platform for Mikrotik developed using PHP. The application uses Mikrotik API to communicate with the router, ensuring efficient and easy integration. If you feel you get more benefits from this application, we would greatly appreciate your contribution through donation.')}<br>{Lang::T('Watch project –')} <a
-                    href="https://github.com/hotspotbilling/phpnuxbill" target="_blank">{Lang::T('IN HERE')}</a>
+                    href="https://github.com/allnetbilling/allnet-billing" target="_blank">{Lang::T('IN HERE')}</a>
             </div>
             <div class="box-footer" id="currentVersion">ver</div>
             <div class="box-footer" id="latestVersion">ver</div>
@@ -154,7 +154,7 @@
                 <div class="btn-group btn-group-justified" role="group" aria-label="...">
                     <a href="./update.php"
                         class="btn btn-success btn-sm btn-block">{Lang::T('Install Latest Version')}</a>
-                    <a href="https://github.com/hotspotbilling/phpnuxbill/archive/refs/heads/master.zip" target="_blank"
+                    <a href="https://github.com/allnetbilling/allnet-billing/archive/refs/heads/master.zip" target="_blank"
                         class="btn btn-warning btn-sm btn-block text-black">{Lang::T('Download Latest Version')}</a>
                 </div>
                 <center><a href="{Text::url('community/rollback')}"
@@ -165,7 +165,7 @@
                 <div class="btn-group btn-group-justified" role="group" aria-label="...">
                     <a href="./CHANGELOG.md" target="_blank"
                         class="btn btn-default btn-sm btn-block">{Lang::T('Current Changelog')}</a>
-                    <a href="https://github.com/hotspotbilling/phpnuxbill/blob/master/CHANGELOG.md" target="_blank"
+                    <a href="https://github.com/allnetbilling/allnet-billing/blob/master/CHANGELOG.md" target="_blank"
                         class="btn btn-default btn-sm btn-block">{Lang::T('Repo Changelog')}</a>
                 </div>
             </div>
@@ -272,7 +272,7 @@
         $.getJSON("./version.json?" + Math.random(), function(data) {
             $('#currentVersion').html('Current Version: ' + data.version);
         });
-        $.getJSON("https://raw.githubusercontent.com/hotspotbilling/phpnuxbill/master/version.json?" + Math
+        $.getJSON("https://raw.githubusercontent.com/allnetbilling/allnet-billing/master/version.json?" + Math
             .random(),
             function(data) {
                 $('#latestVersion').html('Latest Version: ' + data.version);

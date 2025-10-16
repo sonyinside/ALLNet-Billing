@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing)
+ *  by https://t.me/allnetteam
  *
  * Authorize
  *    - Voucher activation
@@ -302,7 +302,7 @@ try {
             }
             $d->macaddr = _post('macAddr');
             $d->dateAdded = date('Y-m-d H:i:s');
-            // pastikan data akunting yang disimpan memang customer aktif phpnuxbill
+            // pastikan data akunting yang disimpan memang customer aktif allnetbilling
             $tur = ORM::for_table('tbl_user_recharges')->whereRaw("BINARY username = '$username' AND `status` = 'on' AND `routers` = 'radius'")->find_one();
             if (!$tur) {
                 // check if pppoe_username

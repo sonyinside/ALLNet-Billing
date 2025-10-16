@@ -1,4 +1,4 @@
-![PHPNuxBill](install/img/logo.png)
+![ALLNet Billing](install/img/logo.png)
 
 # CHANGELOG
 
@@ -320,7 +320,7 @@
 
 ## 2024.2.23
 
-- Integrate with PhpNuxBill Printer
+- Integrate with AllNet Billing Printer
 - Fix Invoice
 - add admin ID in transaction
 
@@ -493,7 +493,7 @@
 
 - Customer can extend Plan
 - Customer can Deactivate active plan
-- add variable nux-router to select  only plan from that router
+- add variable allnet-router to select  only plan from that router
 - Show user expired until 30 items
 
 ## 2023.9.20
@@ -588,7 +588,7 @@ Customer can be move to expired pool after plan expired by cron
 
 ## 2023.8.1
 
-- Add Update file script, one click updating PHPNuxBill
+- Add Update file script, one click updating ALLNet Billing
 - Add Custom UI folder, to custome your own template
 - Delete debug text
 - Fix Vendor JS
@@ -609,7 +609,7 @@ Customer can be move to expired pool after plan expired by cron
 
 - Customer can connect to internet from Customer Dashboard
 - Fix Confirm when delete
-- Change Logo PHPNuxBill
+- Change Logo ALLNet Billing
 - Using Composer
 - Fix Search Customer
 - Fix Customer check, if not found will logout

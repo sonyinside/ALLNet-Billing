@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  *
  * This is Core, don't modification except you want to contribute
  * better create new plugin
@@ -17,11 +17,11 @@ class Radius
         return [
             'title' => 'Radius',
             'description' => 'Radius system with Mysql/Mariadb as database',
-            'author' => 'ibnux',
+            'author' => 'allnetteam',
             'url' => [
-                'Github' => 'https://github.com/hotspotbilling/phpnuxbill/',
-                'Telegram' => 'https://t.me/phpnuxbill',
-                'Donate' => 'https://paypal.me/ibnux'
+                'Github' => 'https://github.com/allnetbilling/allnet-billing/',
+                'Telegram' => 'https://t.me/allnetbilling',
+                'Donate' => 'https://paypal.me/allnetteam'
             ]
         ];
     }

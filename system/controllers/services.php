@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  **/
 _admin();
 $ui->assign('_title', Lang::T('Hotspot Plans'));

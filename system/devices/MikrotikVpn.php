@@ -9,13 +9,13 @@ class MikrotikVpn
     {
         return [
             'title' => 'Mikrotik Vpn',
-            'description' => 'To handle connection between PHPNuxBill with Mikrotik VPN',
+            'description' => 'To handle connection between ALLNet Billing with Mikrotik VPN',
             'author' => 'agstr',
             'url' => [
                 'Github' => 'https://github.com/agstrxyz',
                 'Telegram' => 'https://t.me/agstrxyz',
                 'Youtube' => 'https://www.youtube.com/@agstrxyz',
-                'Donate' => 'https://paypal.me/ibnux'
+                'Donate' => 'https://paypal.me/allnetteam'
             ]
         ];
     }

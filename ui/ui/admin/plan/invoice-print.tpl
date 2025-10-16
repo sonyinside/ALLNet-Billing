@@ -195,7 +195,7 @@
                     <p>{Lang::pad($_c['note'], ' ', 2)}</p>
                     {if $nuxprint}
                         <a href="{$nuxprint}" class="btn btn-success" name="nux" value="print">
-                            <i class="glyphicon glyphicon-print"></i> Nux Print
+                            <i class="glyphicon glyphicon-print"></i> ALLNet Print
                         </a>
                     {/if}
                 </div>

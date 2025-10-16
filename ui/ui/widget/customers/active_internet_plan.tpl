@@ -82,16 +82,16 @@
                         {/foreach}
                     {/if}
 
-                    {if $nux_ip neq ''}
+                    {if $allnet_ip neq ''}
                         <tr>
                             <td class="small text-primary text-uppercase text-normal">{Lang::T('Current IP')}</td>
-                            <td class="small mb15">{$nux_ip}</td>
+                            <td class="small mb15">{$allnet_ip}</td>
                         </tr>
                     {/if}
-                    {if $nux_mac neq ''}
+                    {if $allnet_mac neq ''}
                         <tr>
                             <td class="small text-primary text-uppercase text-normal">{Lang::T('Current MAC')}</td>
-                            <td class="small mb15">{$nux_mac}</td>
+                            <td class="small mb15">{$allnet_mac}</td>
                         </tr>
                     {/if}
                     {if $_bill['type'] == 'Hotspot' && $_bill['status'] == 'on' && $_bill['routers'] != 'radius' && $_c['hs_auth_method'] != 'hchap'}

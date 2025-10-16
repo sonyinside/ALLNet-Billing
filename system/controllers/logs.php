@@ -1,12 +1,12 @@
 <?php
 
 /**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
+ *  ALLNet Billing (https://github.com/allnetbilling/allnet-billing/)
+ *  by https://t.me/allnetteam
  **/
 
 _admin();
-$ui->assign('_title', 'PHPNuxBill Logs');
+$ui->assign('_title', 'ALLNet Billing Logs');
 $ui->assign('_system_menu', 'logs');
 
 $action = $routes['1'];

@@ -8,11 +8,11 @@ class Dummy {
         return [
             'title' => 'Dummy',
             'description' => 'This devices is just dummy and do nothing, good if you just want to use billing only without doing something to device',
-            'author' => 'ibnu maksum',
+            'author' => 'ALLNet Team',
             'url' => [
-                'Github' => 'https://github.com/hotspotbilling/phpnuxbill/',
-                'Telegram' => 'https://t.me/phpnuxbill',
-                'Donate' => 'https://paypal.me/ibnux'
+                'Github' => 'https://github.com/allnetbilling/allnet-billing/',
+                'Telegram' => 'https://t.me/allnetbilling',
+                'Donate' => 'https://paypal.me/allnetteam'
             ]
         ];
     }
