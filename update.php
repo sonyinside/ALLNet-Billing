@@ -1,15 +1,9 @@
 <?php
 
-/**
- * PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *
- * This script is for updating PHPNuxBill
- **/
 session_start();
 include "config.php";
 
 if($db_password != null && ($db_pass == null || empty($db_pass))){
-    // compability for old version
     $db_pass = $db_password;
 }
 
@@ -56,7 +50,6 @@ if (empty($step)) {
 } else if ($step == 1) {
     if (file_exists($file)) unlink($file);
 
-    // Download update
     $fp = fopen($file, 'w+');
     $ch = curl_init($update_url);
     curl_setopt($ch, CURLOPT_POST, 0);
@@ -87,7 +80,6 @@ if (empty($step)) {
         $msgType = "danger";
         $continue = false;
     }
-    // remove downloaded zip
     if (file_exists($file)) unlink($file);
 } else if ($step == 3) {
     deleteFolder('system/autoload/');
@@ -123,7 +115,6 @@ if (empty($step)) {
                     try {
                         $db->exec($q);
                     } catch (PDOException $e) {
-                        //ignore, it exists already
                     }
                 }
                 $dones[] = $version;
@@ -213,7 +204,6 @@ function deleteFolder($path)
     <?php } ?>
     <style>
         ::-moz-selection {
-            /* Code for Firefox */
             color: red;
             background: yellow;
         }
