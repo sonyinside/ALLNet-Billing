@@ -1,8 +1,4 @@
 <?php
-/**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
- **/
 
 session_start();
 
@@ -18,11 +14,9 @@ if(isset($_GET['nux-router']) && !empty($_GET['nux-router'])){
     $_SESSION['nux-router'] = $_GET['nux-router'];
 }
 
-//get chap id and chap challenge
 if(isset($_GET['nux-key']) && !empty($_GET['nux-key'])){
     $_SESSION['nux-key'] = $_GET['nux-key'];
 }
-//get mikrotik hostname
 if(isset($_GET['nux-hostname']) && !empty($_GET['nux-hostname'])){
     $_SESSION['nux-hostname'] = $_GET['nux-hostname'];
 }

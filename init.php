@@ -1,10 +1,5 @@
 <?php
 
-/**
- *  PHP Mikrotik Billing (https://github.com/hotspotbilling/phpnuxbill/)
- *  by https://t.me/ibnux
- **/
-
 if (realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
     header('HTTP/1.0 403 Forbidden', TRUE, 403);
     header('location: ../');
@@ -14,7 +9,6 @@ $root_path = realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR;
 if (!isset($isApi)) {
     $isApi = false;
 }
-// on some server, it getting error because of slash is backwards
 function _autoloader($class)
 {
     global $root_path;
@@ -71,11 +65,9 @@ require_once $root_path . File::pathFixer('system/autoload/PEAR2/Autoload.php');
 include $root_path . File::pathFixer('system/autoload/Hookers.php');
 
 if ($db_password != null && ($db_pass == null || empty($db_pass))) {
-    // compability for old version
     $db_pass = $db_password;
 }
 if ($db_pass != null) {
-    // compability for old version
     $db_password = $db_pass;
 }
 ORM::configure("mysql:host=$db_host;dbname=$db_name");
@@ -91,20 +83,16 @@ if ($isApi) {
     define('U', APP_URL . '/?_route=');
 }
 
-// notification message
 if (file_exists($UPLOAD_PATH . DIRECTORY_SEPARATOR . "notifications.json")) {
     $_notifmsg = json_decode(file_get_contents($UPLOAD_PATH . DIRECTORY_SEPARATOR . 'notifications.json'), true);
 }
 $_notifmsg_default = json_decode(file_get_contents($UPLOAD_PATH . DIRECTORY_SEPARATOR . 'notifications.default.json'), true);
 
-//register all plugin
 foreach (glob(File::pathFixer($PLUGIN_PATH . DIRECTORY_SEPARATOR . '*.php')) as $filename) {
     try {
         include $filename;
     } catch (Throwable $e) {
-        //ignore plugin error
     } catch (Exception $e) {
-        //ignore plugin error
     }
 }
 
@@ -141,7 +129,6 @@ date_default_timezone_set($config['timezone']);
 
 if ((!empty($radius_user) && $config['radius_enable']) || _post('radius_enable')) {
     if (!empty($radius_password)) {
-        // compability for old version
         $radius_pass = $radius_password;
     }
     ORM::configure("mysql:host=$radius_host;dbname=$radius_name", null, 'radius');
@@ -151,8 +138,6 @@ if ((!empty($radius_user) && $config['radius_enable']) || _post('radius_enable')
     ORM::configure('return_result_sets', true, 'radius');
 }
 
-
-// Check if the user has selected a language
 if (!empty($_SESSION['user_language'])) {
     $config['language'] = $_SESSION['user_language'];
 } else if (!empty($_COOKIE['user_language'])) {
@@ -243,13 +228,13 @@ function _log($description, $type = '', $userid = '0')
     $d->type = $type;
     $d->description = $description;
     $d->userid = $userid;
-    if (!empty($_SERVER['HTTP_CF_CONNECTING_IP']))   //to check ip is pass from cloudflare tunnel
+    if (!empty($_SERVER['HTTP_CF_CONNECTING_IP']))
     {
         $d->ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
-    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
     {
         $d->ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    } elseif (!empty($_SERVER['HTTP_CLIENT_IP']))   //to check ip from share internet
+    } elseif (!empty($_SERVER['HTTP_CLIENT_IP']))
     {
         $d->ip = $_SERVER['HTTP_CLIENT_IP'];
     } else if (isset($_SERVER["REMOTE_ADDR"])) {
@@ -280,9 +265,6 @@ function showResult($success, $message = '', $result = [], $meta = [])
     die();
 }
 
-/**
- * make url canonical or standar
- */
 function getUrl($url)
 {
     return Text::url($url);
@@ -290,20 +272,16 @@ function getUrl($url)
 
 function generateUniqueNumericVouchers($totalVouchers, $length = 8)
 {
-    // Define characters allowed in the voucher code
     $characters = '0123456789';
     $charactersLength = strlen($characters);
     $vouchers = array();
 
-    // Attempt to generate unique voucher codes
     for ($j = 0; $j < $totalVouchers; $j++) {
         do {
             $voucherCode = '';
-            // Generate the voucher code
             for ($i = 0; $i < $length; $i++) {
                 $voucherCode .= $characters[rand(0, $charactersLength - 1)];
             }
-            // Check if the generated voucher code already exists in the array
             $isUnique = !in_array($voucherCode, $vouchers);
         } while (!$isUnique);
 
