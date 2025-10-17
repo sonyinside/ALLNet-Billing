@@ -1,5 +1,3 @@
-[![ReadMeSupportPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-project.svg)](https://s.id/standwithpalestine)
-
 # ALLNet Billing - MikroTik Billing
 
 ALLNet Billing is a full-featured billing platform tailored for MikroTik hotspots and PPPOE networks. This fork removes upstream branding while keeping the flexible provisioning, automation, and notification features administrators rely on.
@@ -9,7 +7,7 @@ ALLNet Billing is a full-featured billing platform tailored for MikroTik hotspot
 ## Features
 
 - Voucher Generator and Print
-- [Freeradius](https://github.com/allnetbilling/allnet-billing/wiki/FreeRadius)
+- [Freeradius]
 - Self registration
 - User Balance and Auto Renewal
 - Multi Router MikroTik support
@@ -19,12 +17,12 @@ ALLNet Billing is a full-featured billing platform tailored for MikroTik hotspot
 - Payment Gateway integrations
 - SMS/WhatsApp/Telegram notifications
 
-See [How it Works / Cara Kerja](https://github.com/allnetbilling/allnet-billing/wiki/How-It-Works---Cara-kerja).
+See [How it Works / Cara Kerja]
 
 ## Payment Gateways and Plugins
 
-- [Payment Gateway List](https://github.com/orgs/allnetbilling/repositories?q=payment+gateway)
-- [Plugin List](https://github.com/orgs/allnetbilling/repositories?q=plugin)
+- [Payment Gateway List]
+- [Plugin List]
 
 Use the Plugin Manager inside the application to install integrations.
 
@@ -51,16 +49,16 @@ The application can be installed on a Raspberry Pi device. Cron jobs are easier 
 
 ## Installation
 
-[Installation instructions](https://github.com/allnetbilling/allnet-billing/wiki)
+[Installation instructions]
 
 ## Freeradius
 
-Support [Freeradius with Database](https://github.com/allnetbilling/allnet-billing/wiki/FreeRadius).
+Support [Freeradius with Database]
 
 ## Community Support
 
-- [GitHub Discussion](https://github.com/allnetbilling/allnet-billing/discussions)
-- [Telegram Group](https://t.me/allnetbilling)
+- [GitHub Discussion]
+- [Telegram Group]
 
 ## Technical Support
 
@@ -72,14 +70,8 @@ GNU General Public License version 2 or later. See [LICENSE](LICENSE) for detail
 
 ## Sponsors
 
-- [mixradius.com](https://mixradius.com/)
-- [mlink.id](https://mlink.id)
 - [https://github.com/sonyinside](https://github.com/sonyinside)
 
 ## Thanks
 
 We appreciate all people who are participating in this project.
-
-<a href="https://github.com/allnetbilling/allnet-billing/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=allnetbilling/allnet-billing" />
-</a>
