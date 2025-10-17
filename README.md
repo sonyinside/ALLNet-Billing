@@ -1,4 +1,4 @@
-# ALLNet Billing - MikroTik Billing
+# ALLNet Billing - MikroTik Billingx
 
 ALLNet Billing is a full-featured billing platform tailored for MikroTik hotspots and PPPOE networks. This fork removes upstream branding while keeping the flexible provisioning, automation, and notification features administrators rely on.
 
