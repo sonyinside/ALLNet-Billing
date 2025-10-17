@@ -62,7 +62,7 @@ Support [Freeradius with Database]
 
 ## Technical Support
 
-This software is free and open source without any warranty. Paid technical assistance is available on request. For help, open a discussion or contact the ALLNet team on Telegram at [https://t.me/allnetteam](https://t.me/allnetteam).
+This software is free and open source without any warranty. Paid technical assistance is available on request. For help, open a discussion or contact the ALLNet team on Telegram.
 
 ## License
 
